@@ -1,7 +1,79 @@
+:root {
+  background: purple;
+}
+
 html {
   max-width: 720px;
+  background: blue;
 }
 
 body {
   background: #fff;
 }
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+
+.box {
+  background: #8a8a8a
+}
+
+#user {
+  color:chocolate;
+}
+
+
+.button {
+  background: yellowgreen;
+  color: purple;
+}
+
+h2,
+h3,
+button {
+  color: darkgreen;
+}
+
+div > p {
+  color:darkturquoise;
+}
+
+#user,
+.user {
+  color:coral;
+}
+
+#box > p {
+  color:beige;
+}
+
+footer > .user {
+  color:chartreuse;
+}
+footer > h2 {
+  color:chartreuse;
+}
+
+/* "или просто через пробел" */
+footer em.child {
+  color:purple;
+}
+
+.p-top {
+  background: black;
+}
+h2 + p {
+  background: black;
+}
+
+/* Сестринский селектор. Не сусідній, а через один наприклад  */
+h2 ~ p {
+  background: black;
+}
+
