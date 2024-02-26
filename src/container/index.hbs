@@ -4,7 +4,7 @@
  --}}
 
 
-<section class="p-5 box">
+{{!-- <section class="p-5 box">
     <h1 style="color:yellow">USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
     <h1 id="user">USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
     <h2 class="p-top">USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
@@ -34,13 +34,116 @@
                 <em>Just a text</em>
             </div>
         </div>
-</footer>
-
-
-
-
+</footer> --}}
 
 {{!-- 
     Цей код містить лише те, що буде виводитись в <body>
     Адже наш layout/default.hbs має вже структуру HTML
 --}}
+
+    {{!-- <div class="card p-3 m-3 card-dark">
+        <ul>
+            <li class="item">Eins</li>
+            <li class="item">Zwei</li>
+            <li class="item">Drei</li>
+            <li class="item">Vier</li>
+            <li class="item">Zwei</li>
+        </ul>
+    </div>
+    <div class="card p-3 m-3 card-dark">
+    
+            <b class="pract">Eins</b>
+            <p class="pract">Zwei</p>
+            <p class="pract">Drei</p>
+            <em class="pract">Drei und halb</em>
+            <p class="pract">Vier</p>
+    
+        
+    </div>
+    <div class="card p-3 m-3 card-dark">
+        <ul>
+            <li class="alone">Eins</li>
+        </ul>
+    </div>
+
+    <div class="card p-3 m-3 card-dark">
+    
+            <b class="last">Eins</b>
+            <p class="last">Zwei</p>
+            <p class="last">Drei</p>
+            <em class="last">Drei und halb</em>
+            <p class="last">Vier</p>
+    
+        
+    </div>
+
+        <div class="card p-3 m-3 card-dark">
+    
+            <p class="wak">Eins</p>
+            <p class="wak">Zwei</p>
+            <p class="wak">Drei</p>
+            <p class="wak">Drei und halb</p>
+            <p class="wak">Vier</p>
+    
+        
+    </div> --}}
+
+
+ {{!-- <div class="card card-dark p-5 m-5">
+    <input class="input-dark p-3" placeholder="Something to write" required>
+    <input class="input-dark" type="number">
+ </div>
+
+ <div class="card p-5 m-5 card-dark img">
+    <img alt="image small card 100px" class="small-img" src="https://picsum.photos/200/300" height="100" width="100">
+    <a href="https://picsum.photos/200/300" rel="external">Посилання</a>
+    <button class="btn">Click me</button>
+    <br />
+    <a class="btn btn-secondary" href="https://picsum.photos/200/300">Click agan</a>
+ </div>
+
+ <div class="card p-5 m-5 card-dark">
+    <p class="big-text">Here we wrote something to show how works styles Here we wrote something to show how works styles Here we wrote something to show how works styles Here we wrote something to show how works styles </p>
+ </div> --}}
+
+{{!-- Через #test ми робимо, що на сторінці нас перекидає в місце, де ми поставили
+якір з поміччю id="test" --}}
+ <div lang="fr" class="card card-dark p-5 m-5">
+    <a class="link" href="https://www.google.com.ua/">Click me</a>
+ </div>
+
+  <div lang="en" id="test" class="card card-dark p-5 m-5">
+    Якір
+ </div>
+
+<div id="test" class="card card-dark p-5 m-5">
+    <input placeholder="jashdfakjfh">
+ </div>
+<div class="card-dark m-4 p-4">
+    <button>First button</button>
+    <button disabled>Disabled button</button>
+ </div>
+
+ <div class="card-dark m-4 p-4">
+   <input class="inp">
+   <div class="mt-5">
+        <div>
+            <input type="checkbox" checked>
+            <span>First</span>
+        </div>
+        <div>
+            <input type="checkbox">
+            <span>Second</span>
+        </div>
+   </div>
+ </div>
+
+<div class="card-dark m-4 p-4">
+    <div>
+        <input type="email" required class="valid" placeholder="TeSt">
+        <span>testing text</span>
+    </div>
+    <div class="mt-5">
+        <input type="number" min="10" max="20" required class="number">
+    </div>
+ </div>

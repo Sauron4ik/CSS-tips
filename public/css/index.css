@@ -1,4 +1,4 @@
-:root {
+/* :root {
   background: purple;
 }
 
@@ -61,7 +61,7 @@ footer > h2 {
 }
 
 /* "или просто через пробел" */
-footer em.child {
+/* footer em.child {
   color:purple;
 }
 
@@ -70,10 +70,199 @@ footer em.child {
 }
 h2 + p {
   background: black;
-}
+} */
 
 /* Сестринский селектор. Не сусідній, а через один наприклад  */
-h2 ~ p {
+/* h2 ~ p {
   background: black;
+} */
+
+/* .card-dark {
+  background: #f0ebeb;
 }
 
+.item {
+  color: rgb(0, 127, 42);
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: rgb(186, 0, 99);
+}
+
+.alone:only-child {
+  color: rgb(4, 251, 226);
+}
+
+.pract:first-of-type {
+  color:brown;
+}
+
+.last:last-of-type {
+  color:rgb(6, 152, 214);
+}
+
+.wak:nth-child(3) {
+  color:rgb(216, 2, 209);
+} */
+
+.card-dark {
+  background: #dbe7e3;
+}
+
+/* .input-dark {
+  background: #616060;
+}
+
+.input-dark[required] {
+  background: #950000;
+} */
+
+/* .input-dark[type='number'] {
+  background: #01b546;
+} */
+
+/* Селектор працює з визначенним словом
+якщо в тегу воно є, то виконується параметр */
+/* .small-img[alt~="small"] {
+  height: 200px;
+} */
+
+/* a[rel~='external'] {
+  color:rgb(0, 134, 134);
+} */
+
+/* Цей селектор працює тільки з определенним значенням
+наприклад с btn, тобто з одним класом, а якщо буде клас btn btn-cecondary, 
+то вже не буде працювати */
+/* button[class|="btn"] {
+  background: rgb(244, 43, 43);
+} */
+
+/* А цей селектор задає стиль по значенням атрибута
+з двома класами з -primary, -secondary */
+/* a[class^="btn"] {
+  background: rgb(0, 196, 62);
+} */
+/* Міняє стиль першої букви */
+/* .btn::first-letter {
+  color:red;
+} */
+
+/* Міняє перший рядок */
+/* .big-text::first-line {
+  color:rgb(138, 78, 3)
+} */
+
+/* міняє стиль плейсхолдера в інпуті
+.input-dark::placeholder {
+  color:yellow
+} */
+
+/* Додати єлементи на початку контенту іконки, лапки и тощо, що 
+не буде входити в контент. Це не буде відображатися в пошукових
+системах і це не можна буде виділити */
+/* .big-text::before {
+  content: '"@';
+  color: red
+} */
+/* Додати єлементи на кінець контенту іконки, лапки и тощо, що 
+не буде входити в контент. Це не буде відображатися в пошукових
+системах і це не можна буде виділити  */
+
+/* .big-text::after {
+  content: '%$';
+  color: rgb(0, 27, 206);
+  background: gray;
+} */
+/* Таргет робить якір колоровим, після натискання на 
+ланк з прікріпленим якорем */
+#test:target {
+  color:red;
+}
+/* Робить кольором посилання, на які ми ніразу не заходили */
+.link:link {
+  color:crimson;
+}
+
+/* при наведенні на лінк, підсвічує кольором */
+.link:hover {
+  color: green;
+}
+/* або при наведенні на будь-який тег  */
+.card:hover {
+background: aquamarine;
+}
+
+/* змінює колір тега при натисканні на нього */
+.link:active {
+  color: purple;
+}
+
+input {
+  background-color: rgb(105, 102, 102)
+}
+/* Змінює колір коли починаємо працювати з тегом */
+input:focus {
+  background-color: red;
+}
+input::placeholder {
+  color:blue;
+}
+
+/* міняє колір головного тегу, якщо в середені є дитячій focus */
+.card:focus-within {
+  background: red;
+}
+
+/* вибирає тег з атрибутом вказанної мови */
+
+.card:lang(en) {
+  background: rgb(240, 169, 77);
+}
+button {
+  background-color: yellowgreen;
+}
+button:enabled {
+  background-color: green;
+}
+button:disabled {
+  background-color: yellow;
+}
+
+.inp:read-write {
+  background-color: blueviolet;
+}
+
+/* працює в основному с check i radio. Нижня конструкція змінює колір 
+чека в залежності від того, вибраний він чи ні */
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+
+/* змінює колір при (не)валідному заповненню */
+.valid:valid {
+  background-color: yellow;
+}
+
+.valid:invalid {
+  background-color: rgb(189, 4, 179);
+}
+/* вибирає колір в межах(за межами) розміру інпута мін та макс */
+.number:focus {
+  background: gray;
+}
+
+.number:out-of-range {
+  background: pink;
+}
+.number:in-range {
+  background: rgb(30, 61, 145);
+}
+
+input:placeholder-shown ~ span{
+  background: rgb(135, 240, 55);
+}
