@@ -9,6 +9,7 @@
 }
 .header {
     padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
 }
 
 .logo {
@@ -33,7 +34,7 @@
 
 .nav_link:hover {
     text-decoration: underline;
-    color: blue;
+    opacity: 50%;
 }
 
 .nav_vertical > .nav_link {
@@ -60,6 +61,7 @@
 
 .footer {
     padding: 24px;
+    border-top: 1px solid #DEE2E6;
 }
 
 .footer_copyright {
@@ -85,14 +87,16 @@
     font-weight: 500;
     margin-bottom: 12px;
     text-align: center;
+    
 }
 
 .hero_text {
     font-size: 20px;
-    color: #212529;
+    color: #050505;
     text-align: center;
     max-width: 585px;
     margin: 0 auto;
+    line-height: 150%;
 }
 
 
@@ -119,7 +123,8 @@
 
 .card_price_duration {
     font-size: 29px;
-    color: #6c757d;
+    color: #1e2124;
+    vertical-align: baseline;
 }
 
 .card_block {
@@ -147,4 +152,185 @@
     width: 100%;
     font-size: 19px;
     padding: 9px;
+}
+
+.card {
+    border: 2px solid blue;
+
+    border-radius: 15px 50px;
+    
+}
+
+.card:hover {
+    outline: 2px solid blue;
+    outline-offset: 5px;
+    box-shadow: 5px 5px 10px 2px rgba(13, 0, 255, 0.314);
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 35%;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px 2px rgba(13, 0, 255, 0.314);
+}
+
+h1 {
+    text-shadow: 2px 2px 2px red;
+}
+
+/* Ховає елемент */
+.plans_card:nth-child(2) {
+    visibility: hidden;
+}
+
+.hero_text {
+    background: rgba(102, 102, 102, 0.497);
+
+    max-width: 700px;
+    width: 400px;
+
+    hyphens: manual;
+
+    overflow: auto;
+
+    resize: both;
+
+    word-spacing: 10px;
+}
+
+/* пряче дуже довгий текст, щоб він не вилазив і не налазив */
+.hero_title {
+    max-width: 660px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    height: 65px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+
+    white-space: nowrap;
+}
+
+.overflow {
+    overflow-wrap: anywhere;
+}
+
+body {
+    /* додаємо радиєнт фоном
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(112, 195, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+    ); */
+  /* ========================= */
+
+    /* фоном є картинка */
+
+    /* background-image: url("/img/test.png");
+    background-repeat: repeat; */
+}
+.page {
+    /* Так ми додаємо картинку фоном, робимо її... */
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url("/img/test2.jpg");
+
+    /* нерухомою коли гортаємо */
+    background-attachment: fixed; 
+
+    /* без повторювань */
+    background-repeat: no-repeat;
+
+    /* розтянутою на весь екран */
+    background-size: cover;
+
+    /* центруємо */
+    background-position: center;
+}
+
+/* Так робимо фоном якусь картинку */
+.hero_text {
+    /* background-color: transparent; */
+    /* background-image: url("/img/test2.jpg"); */
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    /* background-origin: border-box; */
+    
+    /* робимо рамку зображенням */
+    /* border-image-source: url(/img/test2.jpg);
+    border-image-width: 35%; */
+
+
+    /* робимо її так, або вона залишається на місці
+    або прокручується з контентом (fixed,scroll) */
+    /* background-attachment: fixed; */
+}
+
+/* додаємо список ул/лі і додаємо стиль маркеру списка */
+.card_block {
+    list-style-type: disc;
+    list-style-position: inside;
+    list-style-image: linear-gradient(
+        to bottom right,
+        blue,
+        red
+    );
+    padding: 0;
+}
+
+.card_description_item {
+    display: list-item;
+}
+
+/* .table tr {
+    border: 1px solid #ffffff
+} */
+
+.table tr td {
+    border: 1px solid #d9b9b9;
+    border-bottom-color: red;
+    border-right-color: blue;
+}
+
+
+/* так ми налаштовуємо таблицю */
+.table {
+    table-layout: auto;
+    width: 600px;
+
+    border-collapse: unset;
+
+    /* Робить відстань між комірками */
+    border-spacing: 20px 10px;
+
+    caption-side: top;
+
+    /* Ховає пусті комірки */
+    empty-cells: hide;
+}
+
+/* робимо "лапки" */
+.nav_link::before, 
+.nav_link::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('/img/test2.jpg');
+}
+
+.nav_link::before {
+    margin-right: 15px;
+}
+
+.nav_link::after {
+    margin-left: 15px;
+}
+
+.calc {
+    width: 600px;
+
+    margin: 0;
+
+    margin-right: calc(50% - (600px / 2));
 }
